@@ -1,0 +1,12 @@
+design portfolio using bootstrap
+6 sections
+requirements:
+1.bootstrap nav for navbar
+2.home section grid
+3.academic skills -populate using bootsrap table and styles
+4.projects-use bootstrap badges or cards.detailed info in the modal
+5.about me - html,css ,bootstrap(our creativity)
+6.achievements-carousal
+7.contact us-update html form to bootstrap and make it responsive
+show the required queries till now or today
+8.blog-can be creative as possible

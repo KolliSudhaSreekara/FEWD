@@ -1,0 +1,188 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+body {
+  background-color: rgb(66, 86, 172,0.1);
+  font-family: Roboto Slab;
+}
+.navbar{
+  background-color: #e2d9d9 ;
+}
+.navbar-brand{
+  color: rgb(255, 196, 0);
+  font-size: 40px;
+}
+.nav-link{
+  color: rgb(255, 196, 0);
+  font-size: 20px;
+}
+.nav-link:hover{
+  color: #8c00ff;
+}
+.svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the SVG stays behind other content */
+}
+.girl {
+  margin-top: -5%;
+  position: relative;
+  height: 100%;
+  z-index: 1; /* Ensure the girl image stays on top of the SVG */
+}
+.carousel img{
+  max-width: 600px; /* Adjust the maximum width as per your requirement */
+  margin: auto; /* Center the carousel */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 196, 0);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+#home span{
+  font-size: 40px;
+}
+
+#home .btn{
+  border-radius: 40px;
+}
+.card {
+  background-color: #ffffff;
+  border: 0.1px solid rgb(238, 238, 238);
+  transition: box-shadow 0.3s ease;
+  padding: 10%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgb(255, 196, 0,0.5);
+}
+
+.card-title {
+  color: #343a40;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+.card-link {
+  color: rgb(255, 196, 0);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: rgb(255, 196, 0);
+}
+
+
+/* CSS for numbering each project card */
+#projects .card::before {
+  counter-increment: project-counter; /* Increment the counter for each project card */
+  content: counter(project-counter); /* Display the counter as content */
+  position: absolute;
+  top: -30px; /* Adjust the position to move the number above the card */
+  left: 45%; /* Position the number in the middle horizontally */
+  transform: translateX(-50%); /* Center the number horizontally */
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgb(255, 196, 0);
+  padding: 5px 10px;
+  border-radius: 50%;
+  z-index: 1; /* Ensure the number is above the card */
+}
+
+
+#projects {
+  counter-reset: project-counter; /* Initialize the counter */
+}
+
+.subheading{
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 3px solid rgb(255, 196, 0);
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #000; 
+}
+
+.secondtable{
+  margin-top: 70px;
+}
+
+#aboutimg{
+  width: 60%;
+  margin-left: 10%;
+}
+
+.more{
+  color: rgb(255, 196, 0);
+}
+.custom-social {
+  display: flex; /* Add flex display to the parent element */
+  justify-content: center; /* Align the list items horizontally in the center */
+  align-items: center;
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+.custom-social .fa{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  border: 2px solid rgb(255, 196, 0);
+  border-radius: 20%;
+  font-size: 25px;
+  color: rgb(255, 196, 0);
+  text-decoration: none;
+}
+
+.post-entry p a{
+  font-size: 20px;
+  color: rgb(255, 196, 0);
+}
+.post-entry span{
+  font-size: 15px;
+}
+.post-entry a{
+  text-decoration: none;
+}
+#academics,#projects,#about,#contact,#blog,#achievements{
+  margin-top:5%;
+}
+.copyrgt{
+  color: rgb(255, 196, 0);
+}
+hr{
+  color: rgb(255, 238, 0);
+  font-size: 10px;
+}

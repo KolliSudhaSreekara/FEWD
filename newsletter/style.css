@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat,'Arial', sans-serif;
+    background-color: #003153;
+}
+body {
+    background-color: #003153;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #003153; */
+}
+.navbar-toggle {
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 210, 0);
+}
+
+.navbar li{
+    list-style: none;
+    margin-right: 15px;
+}
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    /* margin: 10%; */
+}
+i{
+    font-size:  40px;
+    color: #000;
+    background-color: rgb(255, 210, 0);
+    border: rgb(255, 210, 0) solid;
+    border-radius: 50%;
+}
+.icon-bar {
+    background: rgb(255, 210, 0);
+}
+.navbar a:hover {
+    color: rgb(255, 210, 0);
+    text-decoration: none;
+    outline: none;
+    background-color: #003153;
+}
+.logo {
+    height: 90px;
+    margin-left: -5%;
+    background-color: #003153;
+}
+section{
+    color: #fff;
+    padding: 5% 0% 0% 10%;
+}
+section img{
+    float:right;
+    height: 300px;
+    margin: 6%;
+    border-radius: 80% 50% 30% 30%;
+}
+span{
+    color: rgb(255, 210, 0);
+}
+form input{
+    background-color: #fff;
+    border: 0.2px solid black;
+    border-radius: 20px;
+    height: 35px;
+    width: 40%;
+    margin: 1%;
+    padding: 1%;
+}
+form button{
+    background-color: rgb(255, 210, 0);
+    color: #003153;
+    border: none;
+    border-radius: 10px;
+    margin:1%;
+}

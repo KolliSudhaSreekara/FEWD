@@ -1,0 +1,11 @@
+This is an Ecommerce application.
+Include header and footer for all the web pages, create header and footer in seperate file and include in all the pages.
+in header iclude navbar and images as present in e-commerce application. footer include contact mailid and copy right.
+1.design using navbar component for home, about us, products, partners, contact us
+2.In the home page, you have to display today's deals products details as well as discount on products category wise.
+3.in about us, what your e-commerce application offers what products to deliver to the customer.
+4.in products, you have to use grid modal, in order to list what are the products available,product details is retrieved from either of the two ways given
+one way is mongodb, other is json , implement pagination.
+5.in partners, show your creativity in designing partners section.
+6.in contact us, provide the same details as the e-commerce application.
+7. Add a Login link (Modal).

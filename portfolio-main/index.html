@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav justify-content-end"  id="navbarNav">
+            <ul class="nav nav-underline" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#academics">Academic Skills</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#achievements">Achievements</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    <div class="row align-items-center" id="home">
+      <div class="col-lg-6 col-md-6 col-sm-8">
+          <p>I'm<br>
+          <span>Kolli Sudha Sreekara</span><br>
+          B.Tech III year Student at KMIT</p><br>
+          <button type="button" class="btn btn-outline-warning">Get in Touch</button>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-8 position-relative">
+        <div class="svg-container">
+          <img class="rounded mx-auto d-block girl" src="images/shape.svg" alt="image">
+        </div>
+          <img class="rounded mx-auto d-block girl" src="images/two.png" alt="image">
+      </div>
+    </div>
+
+
+    <div class="row" id="academics">
+      <div class="col">
+        <p class="subheading">Academic Skills</p>
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr class="table-light">
+                <th scope="col">#</th>
+                <th scope="col">Programming Languages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Python</td>
+              <tr>
+                <th scope="row">2</th>
+                <td>Java</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>HTML</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>CSS</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>SQL</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="col-1"></div>
+        <div class="col">
+          <table class="table table-striped table-hover secondtable">
+            <thead>
+              <tr class="table-light">
+                <th scope="col">#</th>
+                <th scope="col">Academics</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>DBMS</td></tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>DSA</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>OS</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>SE</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>C & C++</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+
+    <div class="row" id="projects">
+      <div class="col-sm">
+        <p class="subheading">Projects</p>
+        <p>I have worked on a number of projects, ranging from simple scripts to complex applications. Here are some examples:</p>
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="images/num.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Number Guessing Game</h5>
+                <p class="card-text">A Python based command line project</p>
+        <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Know More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Number Guessing Game</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Created a number guessing game using Python to guess a number in a specified range.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                <button type="button" class="btn btn-warning">View Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img src="images/post3.png" class="card-img-top" alt="..."><br>
+              <div class="card-body">
+                <h5 class="card-title">Password Generator</h5><br>
+                <p class="card-text">A Python based GUI project</p><br>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  Know More
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Password Generator</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Developed a Python script to generate strong and secure passwords. Utilized Python libraries like Tkinter 
+                    and random, to create randomized and complex passwords with user-defined criteria.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+                        <button type="button" class="btn btn-warning">View Code</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img src="images/post2.png" class="card-img-top" alt="..."><br>
+              <div class="card-body">
+                <h5 class="card-title">Snake Game</h5><br>
+                <p class="card-text">A Python based GUI project</p><br>
+              <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Know More
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Snake Game</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Created a classic Snake game using Python and Turtle graphics library, demonstrating proficiency in Python programming and user interface design.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+                      <button type="button" class="btn btn-warning">View Code</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          <div class="col-sm">
+            <div class="card">
+              <img src="images/bi.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Billing and Inventory Management Systems</h5>
+                <p class="card-text">A Java based command line project</p><br>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                  Know More
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Billing and Inventory Management Systems</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Collaborated as an equal contributor in a team of four to develop a Java-based billing and inventory 
+                    management systems. Coded essential functionalities for retrieving data from a database for efficient
+                    inventory tracking and billing process using JDBC
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="about">
+      <div class="col">
+        <p class="subheading">About Me</p>
+        <img src="images/one.png" alt="image" class="rounded d-block" id="aboutimg">
+      </div>
+      <div class="col">
+        <!-- <p class="subheading">About Me</p> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+
+  <div class="row" id="achievements">
+    <div class="col">
+      <p class="subheading">Achievements</p>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/JOC certificate.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/cs.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/python.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/PDS certificate.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="row" id="contact">
+      <div class="col-lg-8">
+        <p class="subheading">Contact Me</p>
+        <div class="subscription-form">
+          <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Get in Touch</span></h3>
+          <form action="#" class="row g-3">
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="col-auto">
+              <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-warning">
+                <span class="fa fa-paper-plane"></span>
+              </button>
+            </div>
+            <div class="col-8">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your query"></textarea>
+            </div>
+          </form>
+
+         
+        </div>
+      </div>
+
+    
+      <div class="col">
+        <p class="subheading">Queries upto date</p>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Query1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Answer to the query
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Query2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Answer to the query
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Query3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Answer to the query
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="blog">
+      <div class="col">
+        <p class="subheading">Blog</p>
+
+        <div class="row mb-5">
+					<div class="col-md-6">
+						<h2 class="section-title">Recent Posts</h2>
+					</div>
+					<div class="col-md-6 text-start text-md-end">
+						<a href="#" class="more">View All Posts ></a>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#blog" class="post-thumbnail"><img src="images/post1.png" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<p><a href="#blog">Image Steganography</a></p>
+								<div class="meta">
+									<span>by <a href="#blog">Sudha Sreekara</a></span> <span>on <a href="#blog">Mar 19, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#blog" class="post-thumbnail"><img src="images/post2.png" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<p><a href="#blog">Snake Game</a></p>
+								<div class="meta">
+									<span>by <a href="#blog">Sudha Sreekara</a></span> <span>on <a href="#blog">Feb 15, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#blog" class="post-thumbnail"><img src="images/post3.png" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<p><a href="#blog">Password Generator</a></p>
+								<div class="meta">
+									<span>by <a href="#blog">Sudha Sreekara</a></span> <span>on <a href="#blog">Jan 12, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+        <div class="row g-5 mb-5">
+          <div class="col-lg-4">
+            <ul class="list-unstyled custom-social">
+              <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+              <li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+              <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+              <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+            </ul>
+          </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="row pt-4">
+      <div class="col-lg-6">
+        <p class="mb-2 text-center text-lg-start copyrgt">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.
+      </p>
+		</div>
+</div>
+
+</body>
+</html>
