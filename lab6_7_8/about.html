@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="headerPart"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerPart').innerHTML = data;
+            });
+    </script>
+
+    <main class="container mt-5">
+        <section class="about-us mb-5">
+            <h1>About Us</h1>
+            <p>Welcome to Shoppie, your number one source for all things. We're dedicated to providing you the very best of Product Categories, with an emphasis on quality, customer service, and uniqueness.</p>
+            
+            <h2>Our Offerings</h2>
+            <p>At Shoppie, we offer a wide variety of products to meet all your needs. Our product categories include:</p>
+            <ul>
+                <li><strong>Electronics:</strong> Latest gadgets, smartphones, laptops, and accessories.</li>
+                <li><strong>Fashion:</strong> Trendy apparel, footwear, and accessories for men, women, and kids.</li>
+                <li><strong>Home & Kitchen:</strong> Furniture, kitchen appliances, home decor, and more.</li>
+                <li><strong>Health & Beauty:</strong> Skincare, haircare, personal care, and wellness products.</li>
+                <li><strong>Sports & Outdoors:</strong> Fitness equipment, outdoor gear, and sports accessories.</li>
+                <li><strong>Books & Media:</strong> A vast collection of books, music, and movies.</li>
+                <li><strong>Toys & Games:</strong> Fun and educational toys for children of all ages.</li>
+            </ul>
+
+            <h2>Our Mission</h2>
+            <p>Our mission is to simplify your shopping experience and bring the best products to your doorstep. We strive to offer products that combine both quality and affordability, ensuring customer satisfaction every step of the way.</p>
+            
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Wide Range of Products:</strong> Find everything you need in one place.</li>
+                <li><strong>Quality Assurance:</strong> We ensure that all our products meet high standards of quality.</li>
+                <li><strong>Customer Support:</strong> Our dedicated support team is here to help you with any queries.</li>
+                <li><strong>Fast Delivery:</strong> We offer quick and reliable shipping options to get your products to you as soon as possible.</li>
+                <li><strong>Secure Shopping:</strong> Enjoy a safe and secure shopping experience with our trusted payment gateways.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div id="footerPart"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerPart').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

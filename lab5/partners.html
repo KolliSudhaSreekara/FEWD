@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="headerPart"></div>
+
+    <main class="container mt-5">
+        <h2 class="text-center mb-5">Our Partners</h2>
+        <div id="partners-grid" class="row">
+            <!-- Partner cards will be dynamically generated here -->
+        </div>
+
+        <div id="pagination" class="mt-4">
+            <!-- Pagination links will be dynamically generated here -->
+        </div>
+    </main>
+    <div id="footerPart"></div>
+
+    <script>
+        fetch('/lab5/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerPart').innerHTML = data;
+                // Call function to display partners after loading header
+                displayPartners();
+            });
+
+        fetch('/lab5/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerPart').innerHTML = data;
+            });
+
+        function displayPartners() {
+            const partners = [
+                {
+                    logo: 'partner1-logo.png',
+                    name: 'Partner 1',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    website: '#'
+                },
+                {
+                    logo: 'partner2-logo.png',
+                    name: 'Partner 2',
+                    description: 'Sed et nulla placerat, ullamcorper felis sit amet, suscipit mauris.',
+                    website: '#'
+                },
+                // Add more partners as needed
+            ];
+
+            const partnersGrid = document.getElementById('partners-grid');
+
+            partners.forEach(partner => {
+                const partnerCard = document.createElement('div');
+                partnerCard.classList.add('col-md-4', 'mb-4');
+
+                partnerCard.innerHTML = `
+                    <div class="card">
+                        <img src="${partner.logo}" class="card-img-top" alt="${partner.name} Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">${partner.name}</h5>
+                            <p class="card-text">${partner.description}</p>
+                            <a href="${partner.website}" class="btn btn-primary">Visit Website</a>
+                        </div>
+                    </div>
+                `;
+
+                partnersGrid.appendChild(partnerCard);
+            });
+        }
+    </script>
+</body>
+</html>

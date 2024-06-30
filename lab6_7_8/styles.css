@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #348792;
+    color: rgb(252, 248, 248);
+}
+.navbar{
+    background-color: #348792;
+}
+.navbar-brand{
+    color: white;
+}
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+}
+
+nav ul li {
+    margin-left: 20px;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.nav-link{
+    color:white;
+}
+.nav-link:hover{
+    color:rgb(241, 237, 237);
+}
+#log{
+    margin-top: 8px;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+#deals-container .card, #category-discounts-container .card {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color:#348792;
+    color: rgb(248, 245, 245);
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    color:white;
+}
+
+footer .contact a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer .contact a:hover {
+    text-decoration: underline;
+}
+
+
+h1, h2 {
+    color: #343a40;
+}
+p {
+    color: #6c757d;
+}
+/* About Us page styles */
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us h2 {
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-us p, .about-us ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+}
+
+/* Main content styles */
+#products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#products-grid .col-lg-4, .col-md-6 {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+/* Pagination styles */
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pagination a {
+    text-decoration: none;
+    color: #007bff;
+    background-color: #ffffff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#pagination a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    #products-grid .col-lg-4 {
+        flex: 0 0 48%;
+    }
+
+    #products-grid .col-md-6 {
+        flex: 0 0 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    #products-grid .col-lg-4, .col-md-6 {
+        flex: 0 0 100%;
+    }
+}
+
+/* Contact Us section styles */
+#contact-us {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#contact-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#contact-us p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#contact-us ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contact-us ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.main {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: yellow;
+}

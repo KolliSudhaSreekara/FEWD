@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-commerce</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="headerPart"></div>
+    <div id="root"></div>
+
+    <!-- Include React, ReactDOM, and Babel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- React Component Script -->
+    <script type="text/babel">
+        const MyContactComponent = () => {
+            const [name, setName] = React.useState('');
+            const [email, setEmail] = React.useState('');
+            const [message, setMessage] = React.useState('');
+            const [alertMessage, setAlertMessage] = React.useState('');
+
+            const handleSubmit = (event) => {
+                event.preventDefault();
+                const mailtoLink = `mailto:21bd1a054xcsec@gmail.com?subject=Contact Form Submission&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+                
+                // Simulate sending email (replace with actual API call)
+                try {
+                    window.location.href = mailtoLink;
+                    setAlertMessage('Email sent successfully!');
+                } catch (error) {
+                    setAlertMessage('Failed to send email. Please try again.');
+                }
+            };
+
+            return (
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-sm-10 mt-4">
+                            <div className="col-sm-8">
+                                <h3 className="display-4">Contact Us</h3>
+                                <div id="conform">
+                                    <form onSubmit={handleSubmit}>
+                                        <div className="form-group">
+                                            <label htmlFor="name">Name:</label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                size="40"
+                                                className="form-control"
+                                                value={name}
+                                                onChange={(e) => setName(e.target.value)}
+                                                required
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="email">Email:</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                size="40"
+                                                className="form-control"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                required
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="message">Message:</label>
+                                            <textarea
+                                                id="message"
+                                                name="message"
+                                                rows="6"
+                                                cols="40"
+                                                className="form-control"
+                                                value={message}
+                                                onChange={(e) => setMessage(e.target.value)}
+                                                required
+                                            ></textarea>
+                                        </div>
+                                        <button type="submit" className="btn btn-primary">Submit</button>
+                                    </form>
+                                    {alertMessage && (
+                                        <div className="alert alert-info mt-3">
+                                            {alertMessage}
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        // Render the MyContactComponent into the 'root' div
+        ReactDOM.render(<MyContactComponent />, document.getElementById('root'));
+
+        // Fetch header and footer HTML
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerPart').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerPart').innerHTML = data;
+            });
+    </script>
+
+    <div id="footerPart"></div>
+</body>
+</html>

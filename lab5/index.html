@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="headerPart"></div>
+
+    <script>
+        fetch('/lab5/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerPart').innerHTML = data;
+            });
+    </script>
+
+    <main class="container mt-5">
+        <!-- Today's Deals section -->
+        <section class="deals mb-5">
+            <h2>Today's Deals</h2>
+            <div id="deals-container" class="row"></div>
+        </section>
+
+        <!-- Category Discounts section -->
+        <section class="category-discounts">
+            <h2>Category Discounts</h2>
+            <div id="category-discounts-container" class="row"></div>
+        </section>
+
+         <!-- Notification section -->
+         <section id="notification-container" class="mb-4"></section>
+    </main>
+
+    <div id="footerPart"></div>
+
+    <script>
+        fetch('/lab5/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerPart').innerHTML = data;
+            });
+            
+    </script>
+
+</body>
+</html>
